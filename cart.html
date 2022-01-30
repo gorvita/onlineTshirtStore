@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/54b7cc4636.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="cartstyle.css">
+    <title>Cart</title>
+    <script>
+        function removeFromCart(id){
+            fetch("http://localhost:3000/cart/" + id, {
+  method: 'DELETE',
+})
+
+        }
+    function cart_shirts(){
+        fetch("http://localhost:3000/cart")
+          .then(response => response.json())
+          .then(data => {
+            var target = document.getElementsByClassName('cart-items')[0];
+            let total = 0;
+        for(let info of data) {
+                var str = `
+        <div class="cart-item cart-column">
+        <img class="cart-item-image" src=${info["image"]} width="100" height="100">
+                            <span class="cart-item-title">${info["name"]}</span>
+                        </div>
+                        <span class="cart-price cart-column">${info["price"]}</span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="1">
+                            <button onclick="removeFromCart(${info["id"]})" class="btn btn-danger" type="button">REMOVE</button>
+                            
+        </div>`;
+            var temp = document.createElement('div');
+            temp.innerHTML = str;
+            temp.className = "cart-row";
+            target.appendChild(temp);
+            total += info["price"];
+        }
+        document.getElementsByClassName("cart-total-price")[0].innerText = `${total} €`;
+        });
+        }
+        window.onload = function() {
+          cart_shirts();
+        };</script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar" id="header">
+                <div class="logo"><i class='bx bxs-t-shirt'></i>T-shirt</div>
+                <ul class="list-items" id="list-items">
+                    <li class="items active"><a href="index1.html">Home</a></li>
+                    <li class="items"><a href="index.html">Customize t-shirt</a></li>
+                    <li class="items"><a href="Product.html">Products</a></li>
+                    <li class="items"><a href="contact.html">Contact</a></li>
+                    <li class="items"><a href="#"><i class='bx bxs-cart' id="cart"></i></a>
+                        </li>
+                </ul>
+                <div class="icon-toggle" id="icon-toggle"><i class="material-icons" style="font-size:28px;">menu</i></div>
+            </nav>
+        </header>
+        
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+           
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">0€</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    
+    <section id="contact">
+        <div class="footer">
+            <p>T-shirt &copy; copyright 2021
+                <a href="http://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="http://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            </p>
+         
+        </div>
+    </section>
+    <script src="Product.js"></script>
+</body>
+</html>

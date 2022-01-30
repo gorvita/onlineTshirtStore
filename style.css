@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+html,body, .home-info {
+    height: 150vh;
+    background-color: white;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgba(153,153,110);
+    font-family: 'Otomanopee One';
+    color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+.sticky {
+    top: 0;
+}
+/* navbar section */
+.navbar {
+    width: 90%;
+    padding: 2rem 1.5rem 1.5rem;
+    margin: 0 auto;  
+}
+.logo {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+.icon-toggle {
+    display: none;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+ul li a:hover {
+    color: white;
+}
+.list-items {
+    float: right;
+}
+.list-items .items {
+    display: inline-block;
+    margin-left: 3rem;
+}
+.list-items .items:hover {
+    border: 1px solid black;
+    border-radius: .5rem;
+    transition: all ease-in-out;
+}
+.items.active {
+    border: 1px solid black;
+    border-radius: .5rem;
+    color: wheat;
+}
+/* Customize section */
+.img-fluid {
+    height: 600px !important;
+    margin-bottom: 5rem;
+}
+.img-fluid img {
+    height: 300px !important;
+}
+.drawing-area {
+    position: absolute;
+    margin-top: -37rem;
+    left: 122px;
+    z-index: 10;
+    width: 200px;
+    height: 400px;
+    
+}
+.canvas-container {
+    width: 200px;
+    height: 400px;
+    /* margin-top: -37rem; */
+    position: relative;
+    user-select: none;
+    
+}
+#tshirt-div {
+    margin-top: 10rem;
+    width: 452px;
+    height: 600px;
+    position: relative;
+    background-color: #fff;
+}
+#tshirt-design .transparent{
+    background-color: transparent;
+}
+#canvas {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    user-select: none;
+    cursor: default;
+}
+
+ .product-title {
+    margin-top: 175px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Otomanopee One';
+}
+
+.sub-title {
+    margin-left: 25px;
+    font-size: 1.2rem;
+    font-family: 'Otomanopee One';
+}
+
+.allColors {
+    display: flex;
+    padding: 10px 0 0 30px;
+}
+
+.allColors li {
+    width: 30px;
+    height: 30px;
+    background: wheat;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    margin-right: 17px;
+    margin-top: .6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.allColors li.active {
+    border: 3px solid red;
+}
+
+.allColors li.black {
+    background: black;
+}
+.allColors li.yellow {
+    background: yellow;
+}
+.allColors li.blue {
+    background: blue;
+}
+.allColors li.red {
+    background: red;
+}
+.allColors li.white {
+    background: gainsboro;
+}
+.allColors li.pink {
+    background: pink;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    border: 2px solid rgb(211, 211, 157);
+    padding: 12px;
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.form-select:focus,
+.form-select:hover {
+    color: #ffffff;
+    background-color: rgb(211, 211, 157);
+    padding: 12px;
+    border: transparent;
+}
+.text {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+.btn {
+    background: transparent;
+    color: black;
+    border: 2px solid rgb(211, 211, 157);
+    font-family: 'Otomanopee One';
+    margin-top: 1rem;
+}
+.btn:hover {
+    color: #ffffff;
+    background-color: rgb(211, 211, 157);
+}
+
+.price {
+    padding: 15px 0 25px 30px;
+}
+.price b {
+    font-size: 1.3rem;
+    position: relative;
+    font-weight: 300px;
+}
+.price b span {
+    position: absolute;
+    font-size: .9rem;
+    left: -10px;
+}
+.price small {
+    margin-left: 10px;
+    color: #ccc;
+    font-size: 1rem;
+} 
+
+
+
+.footer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(153,153,110);
+    color: black;
+    font-family: 'Otomanopee One';
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    margin: 2rem 0 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.footer .icons a {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+    
+@media screen and (max-width: 768px) {
+    .list-items {
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        margin-top: 32.5rem;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+        background-color: rgba(153,153,110);
+        text-align: center;
+     }
+     .list-items .items {
+         float: none;
+         width: 80%;
+         margin: 1.2rem auto;
+     }
+     .icon-toggle {
+         display: block;
+         float: right;
+         font-weight: bold;
+         margin-top: -.7rem;
+         padding: .3rem;
+         border: 1px solid black;
+         cursor: pointer;
+     }    
+     .active {
+         left: 0;
+     }
+     .icon-toggle:hover {
+         border: 1px solid white;
+         color: white;
+     }
+    }

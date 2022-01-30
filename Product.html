@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/54b7cc4636.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="productstyle.css">
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script>
+        function addcart(id, name, description, price, image) {
+            let url = "http://localhost:3000/cart";
+            fetch(url, {
+    method: 'POST',     headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({id: id, name: name, description: description, price: price, image: image})
+  });
+
+ }
+function processor(num, data){
+    var target = document.getElementsByClassName('row')[num];
+for(let info of data) {
+        var str = `<div class="pro">
+                       <img src=${info["image"]} class="rounded float-start" alt="">
+                   <div class="des">
+                       <div class="logo1"><i class="bx bxs-t-shirt"></i>${info["name"]}</div>
+                       <h4>${info["description"]}</h4>
+                       <div class="Star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4>${info["price"]}</h4>
+                   </div>
+                    <i onclick="addcart(${info["id"]},'${info["name"]}', '${info["description"]}', ${info["price"]}, '${info["image"]}')" class="bx bxs-cart cart"></i>
+                  </div>` 
+                  var temp = document.createElement('div');
+temp.className = "pro-conteiner"
+	temp.innerHTML = str;
+	target.appendChild(temp);
+}
+}
+function children_shirt(){
+fetch("http://localhost:3000/childrenT-shirtsProducts")
+  .then(response => response.json())
+  .then(data => {
+    processor(0, data)
+  });
+}
+function Family_shirt(){
+fetch("http://localhost:3000/FamilyT-shritsProducts")
+  .then(response => response.json())
+  .then(data => {
+    processor(1, data)
+  });
+}
+function Men_shirt(){
+fetch("http://localhost:3000/MensT-shirtsProducts")
+  .then(response => response.json())
+  .then(data => {
+    processor(2, data)
+  });
+}
+function Special_moments_shirt(){
+fetch("http://localhost:3000/SpecialmomentsProducts")
+  .then(response => response.json())
+  .then(data => {
+    processor(3, data)
+  });
+}
+function womens_shirt(){
+fetch("http://localhost:3000/womensT-shirtproducts")
+  .then(response => response.json())
+  .then(data => {
+    processor(4, data)
+  });
+}
+window.onload = function() {
+  children_shirt(); 
+  Family_shirt();
+  Men_shirt();
+  Special_moments_shirt();
+  womens_shirt();
+
+};
+
+    </script>
+    
+    
+  <title>Online TShirt Store</title>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header class="header">
+            <nav class="navbar" id="header">
+                <div class="logo"><i class='bx bxs-t-shirt'></i>T-shirt</div>
+                <ul class="list-items" id="list-items">
+                    <li class="items active"><a href="index1.html">Home</a></li>
+                    <li class="items"><a href="index.html">Customize t-shirt</a></li>
+                    <li class="items"><a href="Products.html">Products</a></li>
+                    <li class="items"><a href="contact.html">Contact</a></li>
+                    <li class="items"><a href="cart.html"><i class='bx bxs-cart' id="cart"></i></a>
+                        </li>
+                </ul>
+                <div class="icon-toggle" id="icon-toggle"><i class="material-icons" style="font-size:28px;">menu</i></div>
+            </nav>
+        </header>
+
+    
+
+
+    <section id="Product1">
+        <p>Children T-shirts</p>
+        <div class="row">
+            
+         
+            </div>
+                  <p>Family T-shirts</p>
+                  <div class="row">
+               
+
+            </div>
+                  <p>Mens T-shirts</p>
+                  <div class="row">
+               
+
+                </div>
+               <p>Special moments</p>
+               <div class="row">
+               
+
+            </div>
+
+               <p>Women`s T-shirts</p>
+               <div class="row">
+               
+
+            </div>
+
+        
+
+
+
+
+        </div>
+
+       
+
+
+
+                
+                
+        
+        </section>
+ 
+        <section id="contact">
+            <div class="footer">
+                <p>T-shirt &copy; copyright 2021
+                    <a href="http://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="http://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                </p>
+             
+            </div>
+
+        </section>
+    <script src="Product.js"></script>
+    
+</div>
+</body>
+</html>
+

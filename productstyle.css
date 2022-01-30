@@ -1,0 +1,222 @@
+@import url(`https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap`);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Otomanopee One';
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(153,153,110,0.5), rgba(153,153,110,0.5)), url(./image/tshirt.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+  }
+
+  /*<--Header-->*/
+
+  header {
+    /*background-color: rgb(223, 223, 191);*/
+    color: black;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.sticky {
+    top: 0;
+}
+/* navbar section */
+.navbar {
+    width: 90%;
+    padding: 2rem 1.5rem 1.5rem;
+   
+    margin: 0 auto;  
+}
+.logo {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-family: 'Otomanopee One';
+}
+.icon-toggle {
+    display: none;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    font-family: 'Otomanopee One';
+    color: black;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+ul li a:hover{
+    color: white;
+}
+.list-items {
+    float: right;
+}
+.list-items .items {
+    display: inline-block;
+    margin-left: 3rem;
+}
+.list-items .items:hover {
+    border: 1px solid black;
+    border-radius: .5rem;
+    transition: all ease-in-out;
+}
+.items.active {
+    border: 1px solid black;
+    border-radius: .5rem;
+    color: wheat;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   /* background-color: rgba(153,153,110);*/
+    color: black;
+    font-family: 'Otomanopee One';
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    margin: 2rem 0 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.footer  a {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .list-items {
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        margin-top: 1rem;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+        background-color: rgba(153,153,110);
+        text-align: center;
+     }
+     .list-items .items {
+         float: none;
+         width: 80%;
+         margin: 1.2rem auto;
+     }
+     .icon-toggle {
+         display: block;
+         float: right;
+         /*font-weight: bold;*/
+         margin-top: -.3rem;
+         border: 1px solid black;
+         /*padding: .6rem;*/
+         padding-right: 2rem;
+         padding-left: 2rem;
+         border-radius: 20px;
+         cursor: pointer;
+     }    
+     .active {
+         left: 0;
+     }
+     .icon-toggle:hover {
+         border: 1px solid white;
+         color: white;
+     }
+     .col h1{
+         font-size: 70px;
+     }
+    }
+
+
+/*--Products--*/
+
+#Product1 {
+    text-align: center;
+    padding-top: 100px;
+}
+.pro-conteiner { 
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 21%;
+}
+
+
+.pro-conteiner .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid grey;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.pro-conteiner .pro:hover {
+    box-shadow: 20px 20px 30px  rgba(0, 0, 0, 0.6); 
+}
+
+.pro-conteiner .pro img{
+    width: 100%;
+    border-radius: 20px;
+    background-color: wheat;
+
+}
+
+.pro-conteiner .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.pro-conteiner .pro .des h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+.pro-conteiner .pro .des i {
+    font-size: 12px;
+    color:black;
+}
+
+.pro-conteiner .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: olivedrab;
+}
+
+.pro-conteiner .pro .cart {
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: gold;
+    font-weight: 500;
+    color: black;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+

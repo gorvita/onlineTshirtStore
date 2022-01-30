@@ -1,0 +1,307 @@
+{
+  "childrenT-shirtsProducts": [
+    {
+      "id": 1,
+      "name": "T-shirt",
+      "description": "Best Teen T Shirt",
+      "price": 35,
+      "image": "img/children-T-shirts/p1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "T-shirt",
+      "description": "Boys summerdays",
+      "price": 35,
+      "image": "img/children-T-shirts/p2.webp"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "description": "Barbie adventure",
+      "price": 35,
+      "image": "img/children-T-shirts/p3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "T-shirt",
+      "description": "Field of flowers",
+      "price": 35,
+      "image": "img/children-T-shirts/p4.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "T-shirt",
+      "description": "Unicorn1",
+      "price": 35,
+      "image": "img/children-T-shirts/p5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "T-shirt",
+      "description": "Unicorn",
+      "price": 35,
+      "image": "img/children-T-shirts/p6.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "T-shirt",
+      "description": "Birthday Mikimouse",
+      "price": 35,
+      "image": "img/children-T-shirts/p7.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "T-shirt",
+      "description": "Santa",
+      "price": 35,
+      "image": "img/children-T-shirts/p8.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "T-shirt",
+      "description": "The love of cats",
+      "price": 25,
+      "image": "img/children-T-shirts/p9.jpeg"
+    }
+  ],
+  "FamilyT-shritsProducts": [
+    {
+      "id": 1,
+      "name": "T-shirt",
+      "description": "Beautiful family christmas",
+      "price": 35,
+      "image": "img/Family-T-shirts/P1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "T-shirt",
+      "description": "Memories",
+      "price": 35,
+      "image": "img/Family-T-shirts/p2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "description": "Beautiful blue family",
+      "price": 35,
+      "image": "img/Family-T-shirts/p3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "T-shirt",
+      "description": "Beautiful pink family",
+      "price": 35,
+      "image": "img/Family-T-shirts/p4.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "T-shirt",
+      "description": "Things in life",
+      "price": 35,
+      "image": "img/Family-T-shirts/p5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "T-shirt",
+      "description": "Mikis and Minnis of the family",
+      "price": 35,
+      "image": "img/Family-T-shirts/p6.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "T-shirt",
+      "description": "Best shark family",
+      "price": 35,
+      "image": "img/Family-T-shirts/p7.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "T-shirt",
+      "description": "Who`s the Boss?",
+      "price": 35,
+      "image": "img/Family-T-shirts/p8.jpeg"
+    }
+  ],
+  "MensT-shirtsProducts": [
+    {
+      "id": 1,
+      "name": "T-shirt",
+      "description": "Doctors",
+      "price": 35,
+      "image": "img/Men-T-shirts/p1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "T-shirt",
+      "description": "Keep calm",
+      "price": 35,
+      "image": "img/Men-T-shirts/p2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "description": "Myself",
+      "price": 35,
+      "image": "img/Men-T-shirts/p8.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "T-shirt",
+      "description": "Small logo and Marino wool t-shirt",
+      "price": 35,
+      "image": "img/Men-T-shirts/p8.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "T-shirt",
+      "description": "Live your best life",
+      "price": 30,
+      "image": "img/Men-T-shirts/p8.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "T-shirt",
+      "description": "Nice programmer t-shirt",
+      "price": 35,
+      "image": "img/Men-T-shirts/p8.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "T-shirt",
+      "description": "Best gamer out there",
+      "price": 35,
+      "image": "img/Men-T-shirts/p8.jpeg"
+    }
+  ],
+  "SpecialmomentsProducts": [
+    {
+      "id": 1,
+      "name": "T-shirt",
+      "description": "Best Dad T-shirt",
+      "price": 35,
+      "image": "img/Special-moments-T-shirts/p1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "T-shirt",
+      "description": "Best mom title",
+      "price": 30,
+      "image": "img/Special-moments-T-shirts/p2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "description": "Christmas movie T-shirt",
+      "price": 30,
+      "image": "img/Special-moments-T-shirts/p3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "T-shirt",
+      "description": "Best dad in the world",
+      "price": 35,
+      "image": "img/Special-moments-T-shirts/p4.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "T-shirt",
+      "description": "Rock and Roll",
+      "price": 35,
+      "image": "img/Special-moments-T-shirts/p5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "T-shirt",
+      "description": "Music for life",
+      "price": 30,
+      "image": "img/Special-moments-T-shirts/p6.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "T-shirt",
+      "description": "Psychiatric",
+      "price": 35,
+      "image": "img/Special-moments-T-shirts/p7.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "T-shirt",
+      "description": "World`s best mom",
+      "price": 35,
+      "image": "img/Special-moments-T-shirts/p8.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "T-shirt",
+      "description": "Merry F christmas",
+      "price": 25,
+      "image": "img/Special-moments-T-shirts/p9.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "T-shirt",
+      "description": "Best dad and husband",
+      "price": 30,
+      "image": "img/Special-moments-T-shirts/p10.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "T-shirt",
+      "description": "Mom`s T-shirt",
+      "price": 35,
+      "image": "img/Special-moments-T-shirts/p11.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "T-shirt",
+      "description": "Memories of christmas",
+      "price": 35,
+      "image": "img/Special-moments-T-shirts/p12.jpeg"
+    }
+  ],
+  "womensT-shirtproducts": [
+    {
+      "id": 1,
+      "name": "T-shirt",
+      "description": "I do what i want T-shirt",
+      "price": 35,
+      "image": "img/womens-T-shirts/b1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "T-shirt",
+      "description": "Heart T-shirt",
+      "price": 25,
+      "image": "img/womens-T-shirts/b2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "description": "Big Chill festival",
+      "price": 35,
+      "image": "img/womens-T-shirts/b3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "T-shirt",
+      "description": "Citys of the liking",
+      "price": 30,
+      "image": "img/womens-T-shirts/b4.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "T-shirt",
+      "description": "Always successful",
+      "price": 35,
+      "image": "img/womens-T-shirts/b5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "T-shirt",
+      "description": "Love of sleeping",
+      "price": 35,
+      "image": "img/womens-T-shirts/b6.jpeg"
+    }
+  ],
+  "cart": []
+}
